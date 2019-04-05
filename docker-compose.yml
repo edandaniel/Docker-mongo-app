@@ -6,7 +6,7 @@ mongo:
     - './data:/data/db'
 api:
   build: .
-  command:  bash -c "cd app;npm install; nodemon app.js --color=always"
+  command:  bash -c "npm install; nodemon app.js --color=always"
   ports:
     - "8080:8080"
     - "5858:5858"
